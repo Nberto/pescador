@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#adaaaa"
+    android:layout_marginTop="60dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:text="NOMBRE"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <EditText
+            android:id="@+id/txtnombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtnombres"
+            android:text="LATITUD"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <EditText
+            android:id="@+id/txtlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtlat"
+            android:text="LONGITUD"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <EditText
+            android:id="@+id/txtlong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtlong"
+            android:text="RUTA CAMARA"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <EditText
+            android:id="@+id/txtcamara"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4"
+            android:layout_toLeftOf="@+id/btnregistrar"
+            android:layout_toStartOf="@+id/btnregistrar" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtcamara"
+            android:text="RUTA MICROFONO"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <EditText
+            android:id="@+id/txtmicrofono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_alignRight="@+id/txtcamara"
+            android:layout_alignEnd="@+id/txtcamara" />
+        <Button
+            android:id="@+id/btnagregar"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtmicrofono"
+            android:layout_alignParentBottom="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="#908585"
+            android:text="REGISTRAR"
+            android:textColor="#f9050403" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnregistrar"
+            android:layout_above="@+id/txtlong"
+            android:layout_alignRight="@+id/txtnombres"
+            android:layout_alignEnd="@+id/txtnombres"
+            android:src="@android:drawable/ic_menu_mylocation"
+            android:background="#5c5454" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camara"
+            android:src="@android:drawable/ic_menu_camera"
+            android:background="#5c5454"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignLeft="@+id/btnregistrar"
+            android:layout_alignStart="@+id/btnregistrar" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toRightOf="@+id/txtmicrofono"
+            android:layout_toEndOf="@+id/txtmicrofono"
+            android:background="#5c5454"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:id="@+id/microfono" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
